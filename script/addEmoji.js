@@ -22,6 +22,14 @@ document
     const difference = convertedTaskNumber - number;
     document.getElementById("task-number").innerText = difference;
     const sum = convertedTotalTaskNumber + number;
-    document.getElementById("total-task-number").innerText = sum
+    document.getElementById("total-task-number").innerText = sum;
 
+    const historyText = "You have Complete The Task Add new emoji at 12:25 PM";
+
+    const history = document.getElementById("history");
+    const createEl = document.createElement("span");
+    createEl.innerText = `
+    ${historyText}
+    `;
+    history.appendChild(createEl);
   });
