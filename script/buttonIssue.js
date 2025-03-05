@@ -27,8 +27,10 @@ document
     const historyText =
       "You have Complete The Task Fix Mobile Button Issue at 12:25 PM";
 
-    const history = document.getElementById("history");
-    const createEl = document.createElement("span");
-    createEl.innerText = historyText;
-    history.appendChild(createEl);
+      const history = document.getElementById("history");
+      const createEl = document.createElement("span");
+      createEl.innerText = `
+      ${historyText}
+      `;
+      history.appendChild(createEl);
   });
