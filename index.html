@@ -22,7 +22,7 @@
 </head>
 
 <body class="bg-slate-200 min-h-screen">
-  <section class="max-w-[1540px] mx-auto pt-4 poppins-font">
+  <section class="max-w-[1540px] mx-auto pt-4 poppins-font pb-10">
     <!-- nav section  -->
     <nav class=" bg-white rounded-2xl p-5 flex items-center justify-between ">
       <div class="flex items-center gap-3">
@@ -32,7 +32,7 @@
       <div class="flex items-center gap-8">
         <div class="flex items-center gap-3 bg-slate-100 p-2 rounded-2xl ">
           <img src="./assets/checkbox.png" alt=" ">
-          <h1 class=" font-bold text-3xl">24</h1>
+          <h1 id="total-task-number" class=" font-bold text-3xl">23</h1>
         </div>
         <div class=" bg-slate-100 p-2 rounded-full cursor-pointer">
           <img src="./assets/theme-btn.png" alt="">
@@ -49,7 +49,7 @@
             </div>
             <div class=" text-center">
               <p class="font-medium text-base text-gray-600">Task Assigned </p>
-              <h1 class="font-bold text-3xl mt-2 ">05</h1>
+              <h1 id="task-number" class="font-bold text-3xl mt-2 ">6</h1>
             </div>
           </div>
           <div id="blog-btn"
@@ -84,8 +84,8 @@
                 <p class=" text-sm text-gray-600">Deadline</p>
                 <h1 class="font-medium ">21 March 2025</h1>
               </div>
-              <div>
-                <button class=" bg-blue-600 text-white px-4 py-3 rounded-xl cursor-pointer">Completed</button>
+              <div >
+                <button id="button-issue-btn" class=" bg-blue-600 text-gray-50 font-semibold px-4 py-3 rounded-lg cursor-pointer">Completed</button>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@
                 <h1 class="font-medium ">21 March 2025</h1>
               </div>
               <div>
-                <button class=" bg-blue-600 text-white px-4 py-3 rounded-xl cursor-pointer">Completed</button>
+                <button id="dark-mode-btn" class=" bg-blue-600 text-gray-50 rounded-lg font-semibold px-4 py-3  cursor-pointer">Completed</button>
               </div>
             </div>
           </div>
@@ -123,7 +123,7 @@
                 <h1 class="font-medium ">21 March 2025</h1>
               </div>
               <div>
-                <button class=" bg-blue-600 text-white px-4 py-3 rounded-xl cursor-pointer">Completed</button>
+                <button id="home-page-btn" class=" bg-blue-600 text-gray-50 rounded-lg font-semibold px-4 py-3 cursor-pointer">Completed</button>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@
                 <h1 class="font-medium ">21 March 2025</h1>
               </div>
               <div>
-                <button class=" bg-blue-600 text-white px-4 py-3 rounded-xl cursor-pointer">Completed</button>
+                <button id="emoji-btn" class=" bg-blue-600 text-gray-50 rounded-lg font-semibold px-4 py-3 cursor-pointer">Completed</button>
               </div>
             </div>
           </div>
@@ -160,7 +160,7 @@
                 <h1 class="font-medium ">21 March 2025</h1>
               </div>
               <div>
-                <button class=" bg-blue-600 text-white px-4 py-3 rounded-xl cursor-pointer">Completed</button>
+                <button id="openai-btn" class=" bg-blue-600 text-gray-50 rounded-lg font-semibold px-4 py-3 cursor-pointer">Completed</button>
               </div>
             </div>
           </div>
@@ -180,7 +180,7 @@
                 <h1 class="font-medium ">21 March 2025</h1>
               </div>
               <div>
-                <button class=" bg-blue-600 text-white px-4 py-3 rounded-xl cursor-pointer">Completed</button>
+                <button id="job-search-btn" class=" bg-blue-600 text-gray-50 rounded-lg font-semibold px-4 py-3 cursor-pointer">Completed</button>
               </div>
             </div>
           </div>
@@ -207,6 +207,12 @@
   </section>
   <!-- scripts -->
    <script src="./script/blog.js"></script>
+   <script src="./script/buttonIssue.js"></script>
+   <script src="./script/darkMode.js"></script>
+   <script src="./script/homePage.js"></script>
+   <script src="./script/addEmoji.js"></script>
+   <script src="./script/openAi.js"></script>
+   <script src="./script/jobSearch.js"></script>
 </body>
 
 </html>
