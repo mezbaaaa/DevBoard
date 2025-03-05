@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    .poppins-font {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-200 min-h-screen">
+    <section class="max-w-[1540px] mx-auto pt-4 poppins-font">
+      <!-- Navigation Bar -->
+      <nav class=" bg-white rounded-2xl p-5 flex items-center justify-between ">
+        <div class="flex items-center gap-3">
+          <img class="w-10 " src="./assets/logo.png" alt="">
+          <h1 class="text-4xl"><span class="font-light">Dev</span><span class="font-bold">Board</span></h1>
+        </div>
+        <div class="flex items-center gap-8">
+          <div class="flex items-center gap-3 bg-slate-100 p-2 rounded-2xl ">
+            <img src="./assets/checkbox.png" alt=" ">
+            <h1 class=" font-bold text-3xl">24</h1>
+          </div>
+          <div class=" bg-slate-100 p-2 rounded-full cursor-pointer">
+            <img src="./assets/theme-btn.png" alt="">
+          </div>
+        </div>
+      </nav>
+  
+      <!-- Main Content -->
+      <main class=" grid grid-cols-4 gap-x-5 mt-6  ">
+        <section class=" bg-white py-8 px-6 rounded-xl mt-4 col-span-3 ">
+          <section class="grid grid-cols-4 gap-6 ">
+            <div class="bg-slate-100 rounded-2xl flex items-center gap-4 p-6 col-span-1 ">
+              <div class="bg-white p-3 rounded-full cursor-pointer" >
+                <img src="./assets/checkbox.png" alt="">
+              </div>
+              <div class=" text-center">
+                <p class="font-medium text-base text-gray-600">Task Assigned </p>
+                <h1 class="font-bold text-3xl mt-2 ">05</h1>
+              </div>
+            </div>
+            <div class=" bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex items-center rounded-2xl py-6 px-10 gap-6 col-span-2 cursor-pointer ">
+              <div class=" "> 
+                <img src="./assets/board.png" alt="">
+              </div>
+              <div>
+                <h1 class=" text-gray-100 text-2xl font-medium">Discover Something New Today!</h1>
+              </div>
+            </div>
+            <div class="bg-slate-100 rounded-2xl flex items-center gap-4 p-6 col-span-1 ">
+              <div class="bg-white p-3 rounded-full cursor-pointer" >
+                <img src="./assets/calender.png" alt="">
+              </div>
+              <div class=" text-center">
+                <p class="font-medium text-xl text-gray-800">Wed , </p>
+                <h1 class="font-bold text-2xl mt-2 ">Jul 28 2025 </h1>
+              </div>
+            </div>
+          </section>
+          <section class=" mt-16 grid grid-cols-3 gap-8 ">
+            <div class=" bg-slate-100 px-6 py-5 rounded-2xl">
+              <button class=" text-gray-800 btn rounded-lg bg-white border-none">ShopEase</button>
+              <h1 class="font-medium text-2xl mt-4">Fix Mobile Button Issue</h1>
+              <div class=" bg-white rounded-lg p-4 mt-4">
+                <p class="text-gray-500 text-sm font-light">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                  and ensure onClick works properly</p>
+              </div>
+              <div class=" flex justify-between items-center py-2 px-2 mt-4">
+                <div>
+                  <p class=" text-sm text-gray-600">Deadline</p>
+                  <h1 class="font-medium ">21 March 2025</h1>
+                </div>
+                <div>
+                  <button class=" bg-blue-600 text-white px-4 py-3 rounded-xl cursor-pointer">Completed</button>
+                </div>
+              </div>
+            </div>
+  
+            <div class=" bg-slate-100 px-6 py-5 rounded-2xl">
+              <button class=" text-gray-800 btn rounded-lg bg-white border-none">CloudSync</button>
+              <h1 class="font-medium text-2xl mt-4">Add Dark Mode</h1>
+              <div class=" bg-white rounded-lg p-4 mt-4">
+                <p class="text-gray-500 text-sm font-light">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+              </div>
+              <div class=" flex justify-between items-center py-2 px-2 mt-4">
+                <div>
+                  <p class=" text-sm text-gray-600">Deadline</p>
+                  <h1 class="font-medium ">21 March 2025</h1>
+                </div>
+                <div>
+                  <button class=" bg-blue-600 text-white px-4 py-3 rounded-xl cursor-pointer">Completed</button>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class=" bg-slate-100 px-6 py-5 rounded-2xl">
+              <button class=" text-gray-800 btn rounded-lg bg-white border-none">SwiftPay</button>
+              <h1 class="font-medium text-2xl mt-4">Optimize  Home page </h1>
+              <div class=" bg-white rounded-lg p-4 mt-4">
+                <p class="text-gray-500 text-sm font-light">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                  and ensure onClick works properly</p>
+              </div>
+              <div class=" flex justify-between items-center py-2 px-2 mt-4">
+                <div>
+                  <p class=" text-sm text-gray-600">Deadline</p>
+                  <h1 class="font-medium ">21 March 2025</h1>
+                </div>
+                <div>
+                  <button class=" bg-blue-600 text-white px-4 py-3 rounded-xl cursor-pointer">Completed</button>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+          </section>
+        </section>
+        <section class=" px-6 py-8 rounded-xl bg-white mt-4 col-span-1 ">
+          <div class=" flex items-center gap-4 justify-center">
+            <img src="./assets/activity.png" alt="">
+            <h2 class=" font-semibold text-lg text-gray-800">Activity Log</h2>
+          </div>
+          <div class="flex justify-center mt-6 ">
+            <button class=" bg-blue-600 text-white px-4 py-2 rounded-xl cursor-pointer mb-3">Clear History</button>
+          </div>
+          <div class=" mt-6">
+            <p class=" bg-slate-100 p-3 rounded-lg text-sm text-gray-700">
+              You have Complete The Task Add Dark Mode at 12:48:15 PM
+            </p>
+          </div>
+        </section>
+      </main>
+    </section>
+  </body>
+</html>  
