@@ -8,5 +8,5 @@ document
     if (historyContainer) {
       historyContainer.innerHTML = "";
     }
-    document.body.appendChild(createEl);
+    
   });

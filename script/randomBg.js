@@ -3,10 +3,15 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     function getRandomLightHexColor() {
-      let color = Math.floor(Math.random() * 0xffffff).toString(16); // Generate a random hex
-      color = ("000000" + color).slice(-6); // Ensure it's always 6 digits
+      let color = Math.floor(Math.random() * 0xffffff).toString(16);
+      color = ("000000" + color).slice(-6);
+      console.log(color) 
       return `#${color}`;
+      
     }
-
+   
     document.body.style.backgroundColor = getRandomLightHexColor();
+
+    
   });
+
