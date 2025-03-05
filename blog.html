@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog's</title>
+    <!-- cdns  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body class=" bg-slate-200 min-h-screen">
+<section class=" max-w-[1540px] mx-auto pt-4 poppins-font">
+    <nav class=" bg-white rounded-2xl p-5 flex items-center justify-between ">
+        <div class="flex items-center gap-3">
+          <img class="w-10 " src="./assets/logo.png" alt="">
+          <h1 class="text-4xl"><span class="font-light">Dev</span><span class="font-bold">Board</span></h1>
+        </div>
+        <div id="back-to-desk-btn">
+            <button class=" bg-blue-600 text-white px-4 py-2 rounded-xl cursor-pointer">Back to Desk</button>
+          </div>
+      </nav>
+      <section>
+        <h1 class=" font-bold text-3xl flex justify-center mt-5">Blog's</h1>
+        <div class=" py-3 px-4 bg-white rounded-lg mt-8">
+            <h1 class=" font-semibold text-xl border-b-2 py-2 border-gray-300 "><span class="font-bold">Question-1:</span> What are the different ways to select an element in the DOM?</h1>
+            <p class=" text-lg text-gray-600 py-2"><span class="font-semibold">Answer: </span>There are many different ways to select an element in the DOM. Such as ID, Class, Tag, Query Selector, Name, Query SelectorAll.</p>
+        </div>
+        <div class=" py-3 px-4 bg-white rounded-lg mt-5">
+            <h1 class=" font-semibold text-xl border-b-2 py-2 border-gray-300 "><span class="font-bold">Question-2:</span> What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <p class=" text-lg text-gray-600 py-2"><span class="font-semibold">Answer: </span>innerHTML allows you to manipulate the content of an element, including adding or removing HTML tags. It can be used to get or set the HTML structure within an element, while innerText shows the text exactly as rendered on the page. textContent includes all the text inside an element, even from hidden elements. It’s faster than innerText because it doesn’t have to consider CSS styles or compute layout — it just retrieves all the text in the element.</p>
+        </div>
+        <div class=" py-3 px-4 bg-white rounded-lg mt-5">
+            <h1 class=" font-semibold text-xl border-b-2 py-2 border-gray-300 "><span class="font-bold">Question-3:</span>  What is event delegation in the DOM?</h1>
+            <p class=" text-lg text-gray-600 py-2"><span class="font-semibold">Answer: </span>Event delegation is a technique in the DOM where you attach a single event listener to a parent element instead of multiple listeners to individual child elements. This works because events "bubble" up the DOM tree, meaning an event triggered on a child element will propagate up to its parent elements.</p>
+        </div>
+        <div class=" py-3 px-4 bg-white rounded-lg mt-5">
+            <h1 class=" font-semibold text-xl border-b-2 py-2 border-gray-300 "><span class="font-bold">Question-4:</span> What is event bubbling in the DOM?</h1>
+            <p class=" text-lg text-gray-600 py-2"><span class="font-semibold">Answer: </span>Event bubbling is a concept in the DOM (Document Object Model) where an event triggered on a child element "bubbles up" through its parent elements, all the way to the top of the DOM tree.</p>
+        </div>
+        <div class=" py-3 px-4 bg-white rounded-lg mt-5">
+            <h1 class=" font-semibold text-xl border-b-2 py-2 border-gray-300 "><span class="font-bold">Question-5:</span> How do you create, add, and remove elements using JavaScript?</h1>
+            <p class=" text-lg text-gray-600 py-2"><span class="font-semibold">Answer: </span>TTo create an element in JavaScript, use document.createElement('tag'). Then, to add it to the DOM, use parent.appendChild(newElement) to append it, or parent.insertBefore(newElement, referenceElement) to insert it before another element. To remove an element, you can use parent.removeChild(element) or directly call element.remove() to remove it from the DOM. These methods allow you to dynamically manage elements on the page.</p>
+        </div>
+      </section>
+</section>
+<!-- scripts -->
+ <script src="./script/backToDesk.js"></script>
+</body>
+
+</html>
